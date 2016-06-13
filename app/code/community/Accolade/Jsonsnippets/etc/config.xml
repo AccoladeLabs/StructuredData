@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Accolade_Jsonsnippets>
+            <version>1.0.0</version>
+        </Accolade_Jsonsnippets>
+    </modules>
+    <global>
+        <models>
+            <jsonsnippets>
+                <class>Accolade_Jsonsnippets_Model</class>
+            </jsonsnippets>
+        </models>
+        <blocks>
+            <jsonsnippets>
+                <class>Accolade_Jsonsnippets_Block</class>
+            </jsonsnippets>
+        </blocks>
+        <helpers>
+            <jsonsnippets>
+                <class>Accolade_Jsonsnippets_Helper</class>
+            </jsonsnippets>
+        </helpers>
+    </global>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <jsonsnippets>
+                                            <title>Rich Snippets (JSON)</title>
+                                        </jsonsnippets>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+    <frontend>
+        <layout>
+            <updates module="Accolade_Jsonsnippets">
+                <jsonsnippets>
+                    <file>accolade_jsonsnippets.xml</file>
+                </jsonsnippets>
+            </updates>
+        </layout>
+    </frontend>
+
+    <default>
+        <jsonsnippets>
+            <general>
+                <enabled>1</enabled>
+                <review>1</review>
+            </general>
+            <attributes>
+                <manufacturer>manufacturer</manufacturer>
+                <color>color</color>
+                <model></model>
+            </attributes>
+            <socialprofiles>
+				<context>http://schema.org</context>
+				<type>Organization</type>
+				<contacttype>customer support</contacttype>
+            </socialprofiles>
+        </jsonsnippets>
+    </default>
+</config>

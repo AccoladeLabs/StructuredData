@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    CMW
+ * @package     CMW_ConversionTracking
+ * @author	    Akash Verma <akashverma@catchmyweb.com>
+ * @copyright   Copyright (c) 2014 Catch My Web. (http://www.catchmyweb.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+-->
+<layout version="0.1.0">
+	
+	<default translate="label" module="page">
+        <reference name="before_body_end">
+            <block type="jsonsnippets/jsonld" name="jsonsnippets" after="-" template="accolade/jsonsnippets.phtml" />
+        </reference>
+    </default>
+	
+	
+</layout>
