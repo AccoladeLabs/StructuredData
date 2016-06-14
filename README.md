@@ -8,7 +8,7 @@ Installation
 ------------
 ###With git:
 
-`git clone https://github.com/Accolades/JSON-LD`
+`git clone https://github.com/Accolades/StructuredData`
 
 Social profiles include
 ----------
